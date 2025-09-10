@@ -47,7 +47,7 @@ app = FastAPI()
 # Startup and shutdown handling
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    """Start and stop server processes"""
+
     global _llama_server
     
     # Start setup GUI after a brief delay (FastAPI will be ready)
